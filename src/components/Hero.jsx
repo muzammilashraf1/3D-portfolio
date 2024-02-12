@@ -9,41 +9,43 @@ import Typewriter from 'typewriter-effect';
 
 const Hero = () => {
   return (
-    <section className={`relative w-full min-h-screen mx-auto`}>
-      <div
-        className={`absolute inset-0 top-[120px] mx-auto ${styles.paddingX} flex flex-col lg:flex-row items-start gap-4`}
-      >
-        <div className='flex w-[1200px] gap-3'>
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-          <div className='w-1 sm:h-40 h-40 violet-gradient' />
-        </div>
-
-        <div className='pt-3'>
-          <h1 className={`${styles.sectionHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'> Minhal
-            </span>
-          </h1>
-          <div>
-            <p className={`${styles.sectionSubText} mt-2 text-white-100 inline`}>
-            {'>'} <Typewriter
-                options={{
-                  strings: ['Software Developer', `Computer Science '22 @ University of Waterloo`, 'Use the terminal or scroll down to learn more :)'],
-                  autoStart: true,
-                  loop: true,
-                  pauseFor: 2000
-                }}
-                className='inline'
-              />
-          </p>
+    <section className={`relative w-full min-h-screen mx-auto bg-gradient-to-r from-cyan-700 to-blue-600`}>
+      
+      <div className={`absolute inset-0 top-[120px] mx-auto ${styles.paddingX} flex flex-col lg:flex-row items-start gap-4`}>
+        <div className='flex w-[1200px] gap-3 h-full'>
+          <div className='flex flex-col justify-start items-center mt-5'>
+            <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
+            <div className='w-1 sm:h-40 h-40 violet-gradient' />
           </div>
-          
+
+          <div className='pt-3 h-full flex flex-co'>
+            <div>
+              <h1 className={`${styles.sectionHeadText} text-white`}>
+                Hi, I'm <span className='text-[#915EFF]'> Minhal
+                </span>
+              </h1>
+              <div>
+                <p className={`${styles.sectionSubText} mt-2 text-white-100 inline`}>
+                  {'>'} <Typewriter
+                    options={{
+                      strings: ['Software Developer', `Computer Science '22 @ University of Waterloo`, 'Use the terminal or scroll down to learn more :)'],
+                      autoStart: true,
+                      loop: true,
+                      pauseFor: 2000
+                    }}
+                    className='inline'
+                  />
+                </p>
+              </div>
+
+            </div>
+
+          </div>
         </div>
-        </div>
-        
 
 
-        <ComputersCanvas/>
+
+        <ComputersCanvas />
       </div>
 
 

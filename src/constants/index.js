@@ -23,6 +23,9 @@ import {
     jobit,
     tripguide,
     threejs,
+    github,
+    gmail,
+    linkedin
   } from "../assets";
   
   export const navLinks = [
@@ -63,22 +66,21 @@ import {
     },
   ];
   
-  const technologies = [
+  const contact = [
     {
-      name: "HTML 5",
-      icon: html,
+      name: 'GMail',
+      icon: gmail,
+      link: 'mailto:mshanjer@gmail.com'
     },
     {
-      name: "CSS 3",
-      icon: css,
+      name: 'GitHub',
+      icon: github,
+      link: 'https://www.github.com/minhalexus'
     },
     {
-      name: "JavaScript",
-      icon: javascript,
-    },
-    {
-      name: "TypeScript",
-      icon: typescript,
+      name: 'LinkedIn',
+      icon: linkedin,
+      link: 'https://www.linkedin.com/in/mshanjer'
     }
   ];
   
@@ -230,5 +232,5 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, contact, experiences, testimonials, projects };
   

@@ -1,44 +1,43 @@
-import { useState, useRef, Suspense } from "react";
+import { OrbitControls, Preload } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Points, PointMaterial, Preload } from "@react-three/drei";
-import * as random from "maath/random/dist/maath-random.esm";
+import { useMemo, useRef, Suspense } from "react";
 
-const Stars = (props) => {
-  const ref = useRef();
-  const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.2 }));
+const BasicParticles = () => {
+  // This reference gives us direct access to our points
+  const points = useRef();
 
-  useFrame((state, delta) => {
-    ref.current.rotation.x -= delta / 10;
-    ref.current.rotation.y -= delta / 15;
-  });
-
+  // You can see that, like our mesh, points also takes a geometry and a material,
+  // but a specific material => pointsMaterial
   return (
-    <group rotation={[0, 0, Math.PI / 4]}>
-      <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
-        <PointMaterial
-          transparent
-          color='#f272c8'
-          size={0.002}
-          sizeAttenuation={true}
-          depthWrite={false}
-        />
-      </Points>
-    </group>
+    <points ref={points}>
+      <sphereGeometry args={[1, 48, 48]} />
+      <pointsMaterial color="#5786F5" size={0.015} sizeAttenuation />
+    </points>
   );
 };
 
 const StarsCanvas = () => {
   return (
-    <div className='w-full h-auto absolute inset-0 z-[-1]'>
-      <Canvas camera={{ position: [0, 0, 1] }}>
-        <Suspense fallback={null}>
-          <Stars />
-        </Suspense>
-
-        <Preload all />
-      </Canvas>
-    </div>
+    <Canvas camera={{ position: [1.5, 1.5, 1.5] }}>
+      <ambientLight intensity={0.5} />
+      <BasicParticles />
+      <OrbitControls autoRotate />
+    </Canvas>
   );
 };
+
+// const StarsCanvas = () => {
+//   return (
+//     <div className='w-full h-auto absolute inset-0 z-[-1]'>
+//       <Canvas>
+//         <Suspense fallback={null}>
+//           <BasicParticles />
+//         </Suspense>
+
+//         <Preload all />
+//       </Canvas>
+//     </div>
+//   );
+// };
 
 export default StarsCanvas;
