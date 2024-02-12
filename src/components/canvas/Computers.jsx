@@ -3,6 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF, Html } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
+import Terminal from "../Terminal";
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./apple_imac/scene.gltf");
@@ -13,16 +14,15 @@ const Computers = ({ isMobile }) => {
       <directionalLight position={[10, 10, 5]} intensity={3} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 8 : 12}
+        scale={isMobile ? 9 : 12}
         position={isMobile ? [0, -0.5, -1] : [0, 0, -0.5]}
         rotation={[-0.00, 0.1, 0]}
       />
-      {/* <Html distanceFactor={10}>
-        <div className="p-12  bg-red">
-          hello <br />
-          world
+      <Html distanceFactor={9}>
+        <div className='absolute top-[-150px] left-[-180px]'>
+          <Terminal />
         </div>
-      </Html> */}
+      </Html>
     </mesh>
   );
 };
@@ -32,7 +32,7 @@ const ComputersCanvas = () => {
 
   useEffect(() => {
     // Add a listener for changes to the screen size
-    const mediaQuery = window.matchMedia("(max-width: 700px)");
+    const mediaQuery = window.matchMedia("(max-width: 1000px)");
 
     // Set the initial value of the `isMobile` state variable
     setIsMobile(mediaQuery.matches);
