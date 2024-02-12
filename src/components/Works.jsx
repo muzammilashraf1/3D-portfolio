@@ -70,7 +70,7 @@ const ProjectCard = ({
 
 const Works = () => {
   return (
-    <>
+    <section id="works" name="works">
       <motion.div variants={textVariant}>
         <p className={styles.sectionSubText}></p>
       </motion.div>
@@ -93,7 +93,7 @@ const Works = () => {
         })}
 
       </div>
-    </>
+    </section>
   )
 }
 

@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { logo, menu, close } from '../assets';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -34,7 +35,17 @@ const Navbar = () => {
                 className={`${
                   active === link.title ? "text-white" : "text-gray-400"
                 } hover:text-white text-[18px] font-medium cursor-pointer`}>
-                <a href={`#${link.id}`}>{link.title}</a>
+                <Link 
+                      activeClass="active"
+                      to={`${link.id}`}
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={200}
+                    >
+                      {link.title}
+                    </Link>
+                    {/* <a href={`#${link.id}`}>{link.title}</a> */}
               </li>
             );
           })}
@@ -61,7 +72,17 @@ const Navbar = () => {
                       setToggle(!toggle);
                     }}
                   >
-                    <a href={`#${link.id}`}>{link.title}</a>
+                    <Link 
+                      activeClass="active"
+                      to={`${link.id}`}
+                      spy={true}
+                      smooth={true}
+                      offset={-50}
+                      duration={200}
+                    >
+                      {link.title}
+                    </Link>
+                    {/* <a href={`#${link.id}`}>{link.title}</a> */}
                   </li>
                 );
               })}
