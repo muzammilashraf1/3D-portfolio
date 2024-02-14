@@ -12,7 +12,7 @@ const Hero = () => {
     <section id="hero" className={`relative w-full min-h-screen mx-auto bg-gradient-to-r from-cyan-700 to-blue-600`}>
       
       <div className={`absolute inset-0 top-[120px] mx-auto ${styles.paddingX} flex flex-col lg:flex-row items-start gap-1`}>
-        <div className='flex w-[1200px] gap-2 md:h-full'>
+        <div className='flex lg:w-[1200px] gap-2 md:h-full'>
           <div className='flex flex-col justify-start items-center mt-5'>
             <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
             <div className='w-1 xs:h-40 h-40 violet-gradient' />

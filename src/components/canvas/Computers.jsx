@@ -16,7 +16,7 @@ const Computers = ({ isMobile }) => {
         object={computer.scene}
         scale={isMobile ? 8 : 12}
         position={isMobile ? [0, -0.5, -1] : [0, 0, -0.5]}
-        rotation={[-0.00, 0.1, 0]}
+        rotation={[0.0, 1.35, 0]}
       />
       <Html distanceFactor={isMobile ? 4 : 10} zIndexRange={[0, 1]}>
         <div className='absolute top-[-150px] left-[-180px]'>
@@ -53,6 +53,7 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
+      pointerEvents='none' 
       frameloop='demand'
       shadows
       dpr={[1, 2]}
@@ -60,13 +61,7 @@ const ComputersCanvas = () => {
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-          minAzimuthAngle={0}
-          maxAzimuthAngle={0}
-        />
+        
         <Computers isMobile={isMobile} />
       </Suspense>
 
