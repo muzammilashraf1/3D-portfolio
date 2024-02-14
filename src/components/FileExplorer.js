@@ -9,9 +9,7 @@ const FileExplorer = () => {
     '/home/user/contactme/phone.txt': '226 507 5936',
     '/home/user/contactme/linkedin.txt': '<a href="https://www.linkedin.com/in/mshanjer/" target="_blank">linkedin.com/in/mshanjer/</a>',
     '/home/user/contactme/github.txt': '<a href="https://github.com/minhalexus" target="_blank">github.com/minhalexus</a>',
-    '/home/user/resume': {},
     '/home/user/myskills': {},
-    '/home/user/resume/minhalresume.txt': '<a href="https://drive.google.com/file/d/1kf85nJBLV8fI9n9ESAnWammhzDl5W84Y/view?usp=sharing" target="_blank">Resume</a>',
     '/home/user/myskills/proficientskills.txt': 'C++, React, TypeScript, Java, Python, SQL',
     '/home/user/myskills/developingskills.txt': 'Go, Spring Boot, Ruby',
   });
