@@ -3,16 +3,16 @@ import { useState } from 'react';
 const FileExplorer = () => {
   const [currentDirectory, setCurrentDirectory] = useState('/home/user');
   const [fileContents] = useState({
-    '/home/user/aboutme.txt': 'Hello! My name is Stefan Caloian. I graduated with a degree in computer engineering from the University of Waterloo in 2022. Throughout my co-op and fulltime career, I worked in all sorts of roles, ranging from full stack development, to working with artifical intelligence.',
+    '/home/user/aboutme.txt': 'Hello! My name is Minhal Shanjer. I graduated with a degree in computer science from the University of Waterloo in 2022. Throughout my co-op and fulltime career, I did a lot of work with React.js, React Native, and Node.js. I am currently working at Axonify Inc as a Software Developer. I am passionate about software development and am always looking for new and exciting projects to work on!',
     '/home/user/contactme': {},
-    '/home/user/contactme/email.txt': 'stefc12341@outlook.com',
-    '/home/user/contactme/phone.txt': '519 504 7597',
-    '/home/user/contactme/linkedin.txt': '<a href="https://www.linkedin.com/in/stefancaloian/" target="_blank">linkedin.com/in/stefancaloian/</a>',
-    '/home/user/contactme/github.txt': '<a href="https://github.com/stefdude1999" target="_blank">github.com/stefdude1999</a>',
+    '/home/user/contactme/email.txt': 'mshanjer@gmail.com',
+    '/home/user/contactme/phone.txt': '226 507 5936',
+    '/home/user/contactme/linkedin.txt': '<a href="https://www.linkedin.com/in/mshanjer/" target="_blank">linkedin.com/in/mshanjer/</a>',
+    '/home/user/contactme/github.txt': '<a href="https://github.com/minhalexus" target="_blank">github.com/minhalexus</a>',
     '/home/user/resume': {},
     '/home/user/myskills': {},
-    '/home/user/resume/stefanresume.txt': '<a href="https://drive.google.com/file/d/1kf85nJBLV8fI9n9ESAnWammhzDl5W84Y/view?usp=sharing" target="_blank">Resume</a>',
-    '/home/user/myskills/proficientskills.txt': 'C++, C, C#, React, Rust, Java, Python, SQL',
+    '/home/user/resume/minhalresume.txt': '<a href="https://drive.google.com/file/d/1kf85nJBLV8fI9n9ESAnWammhzDl5W84Y/view?usp=sharing" target="_blank">Resume</a>',
+    '/home/user/myskills/proficientskills.txt': 'C++, React, TypeScript, Java, Python, SQL',
     '/home/user/myskills/developingskills.txt': 'Go, Spring Boot, Ruby',
   });
 
