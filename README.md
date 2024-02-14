@@ -1,8 +1,25 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my website. Checkout minhalshanjer.com
 
-Currently, two official plugins are available:
+Remember to check vite.config.js when executing locally. 
+The 'base' should be commented out in the local environment.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Check package.json for all the commands available.
+
+npm install
+npm run dev
+// for deployment, with base targeting the github link
+npm run deploy 
+
+```
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()]
+  // base: 'https://minhalexus.github.io/3D-portfolio'
+})
+```
+
