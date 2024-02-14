@@ -19,7 +19,8 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
+    worklist,
+    sustainblr,
     jobit,
     tripguide,
     threejs,
@@ -29,6 +30,10 @@ import {
   } from "../assets";
   
   export const navLinks = [
+    {
+      id: "hero",
+      title: "Terminal",
+    },
     {
       id: "about",
       title: "About",
@@ -168,33 +173,33 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "WorkList",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web app developed with Python and Flask which allows users to create a profile containing information such as professional skills, projects and experience.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
-          color: "green-text-gradient",
+          name: "flask",
+          color: "orange-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "python",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: worklist,
+      source_code_link: "https://worklist-a2904.web.app/",
     },
     {
-      name: "Job IT",
+      name: "Leaving Shortly",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A centralized app to track games and media content coming soon or leaving from subscription based services like PlayStation Plus or Xbox Game Pass.",
       tags: [
         {
-          name: "react",
+          name: "nextjs",
           color: "blue-text-gradient",
         },
         {
@@ -202,33 +207,33 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "scss",
-          color: "pink-text-gradient",
+          name: "springboot",
+          color: "orange-text-gradient",
         },
       ],
       image: jobit,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Trip Guide",
+      name: "Sustainablr",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Developed a web app that takes specific fuel consumption, and creates a regression for the predicted consumption rates in the future based on machine learning training data.",
       tags: [
         {
-          name: "nextjs",
+          name: "Angular",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "mongodb",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "scikit-learn",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: sustainblr,
+      source_code_link: "https://github.com/minhalexus/go-green",
     },
   ];
   

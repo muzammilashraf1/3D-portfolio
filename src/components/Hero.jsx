@@ -9,13 +9,13 @@ import Typewriter from 'typewriter-effect';
 
 const Hero = () => {
   return (
-    <section className={`relative w-full min-h-screen mx-auto bg-gradient-to-r from-cyan-700 to-blue-600`}>
+    <section id="hero" className={`relative w-full min-h-screen mx-auto bg-gradient-to-r from-cyan-700 to-blue-600`}>
       
-      <div className={`absolute inset-0 top-[120px] mx-auto ${styles.paddingX} flex flex-col lg:flex-row items-start gap-4`}>
-        <div className='flex w-[1200px] gap-3 h-full'>
+      <div className={`absolute inset-0 top-[120px] mx-auto ${styles.paddingX} flex flex-col lg:flex-row items-start gap-1`}>
+        <div className='flex w-[1200px] gap-2 md:h-full'>
           <div className='flex flex-col justify-start items-center mt-5'>
             <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-            <div className='w-1 sm:h-40 h-40 violet-gradient' />
+            <div className='w-1 xs:h-40 h-40 violet-gradient' />
           </div>
 
           <div className='pt-3 h-full flex flex-co'>
@@ -43,13 +43,11 @@ const Hero = () => {
           </div>
         </div>
 
-
-
         <ComputersCanvas />
       </div>
 
 
-      <div className='absolute xs:bottom-5 bottom-5 w-full flex justify-center items-center'>
+      <div className='absolute xs:bottom-5 bottom-5 right-2 w-full flex justify-end md:justify-center items-end md:items-center'>
         <Link
           activeClass="active"
           to={`about`}

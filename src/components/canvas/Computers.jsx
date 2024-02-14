@@ -14,11 +14,11 @@ const Computers = ({ isMobile }) => {
       <directionalLight position={[10, 10, 5]} intensity={3} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 9 : 12}
+        scale={isMobile ? 8 : 12}
         position={isMobile ? [0, -0.5, -1] : [0, 0, -0.5]}
         rotation={[-0.00, 0.1, 0]}
       />
-      <Html distanceFactor={10} zIndexRange={[0, 1]}>
+      <Html distanceFactor={isMobile ? 4 : 10} zIndexRange={[0, 1]}>
         <div className='absolute top-[-150px] left-[-180px]'>
           <Terminal />
         </div>

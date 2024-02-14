@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -33,6 +32,12 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import worklist from "./projects/worklist.png";
+import sustainblr from "./projects/sustainblr.jpg";
+
+import logo from './self/logo.png';
+import profile from './self/profile.jpg';
+
 export {
   logo,
   backend,
@@ -63,5 +68,8 @@ export {
   jobit,
   tripguide,
   gmail,
-  linkedin
+  linkedin,
+  profile,
+  worklist,
+  sustainblr
 };

@@ -19,7 +19,7 @@ const ServiceCard = ({index, title, icon}) => {
 
 const About = () => {
   return (
-    <section id="about" className='relative w-full min-h-[300px] mx-auto bg-black pt-8 text-white'>
+    <section id="about" className='py-20 relative w-full min-h-[300px] mx-auto bg-black pt-8 text-white'>
       <h2 className="text-center p-3 underline min-w-[30%] text-4xl">
           About Me
       </h2>

@@ -1,3 +1,7 @@
 .navbar-z-index {
   z-index: 1001;
 }
+
+.active {
+  color: rgb(226, 146, 226);
+}

@@ -12,9 +12,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full flex items-center py-5 fixed top-0 z-50 bg-primary navbar-z-index`}
+      className={`w-[100vw] flex items-center py-5 fixed top-0 z-50 bg-slate-900 navbar-z-index backdrop-filter backdrop-blur-md bg-opacity-60`}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+      <div className="w-full flex justify-around items-center mx-auto">
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -24,7 +24,7 @@ const Navbar = () => {
           }
         }
         >
-          <img src={'public/logo.png'}  alt="logo" className="w-9 h-9 object-contain cursor-pointer"/>
+          <img src={logo}  alt="logo" className="w-9 h-9 object-contain cursor-pointer"/>
           <p className="text-white text-[18px] font-bold cursor-pointer">
             inhal
           </p>
@@ -34,7 +34,7 @@ const Navbar = () => {
             return (
               <li key={link.id}
                 className={`${
-                  active === link.title ? "text-white" : "text-gray-400"
+                  active === link.title ? "text-white" : "text-gray-300"
                 } hover:text-white text-[18px] font-medium cursor-pointer`}>
                 <Link 
                       activeClass="active"
@@ -60,7 +60,7 @@ const Navbar = () => {
 
           />
 
-          <div className={`${!toggle ? 'hidden' : 'flex' } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
+          <div className={`${!toggle ? 'hidden' : 'flex' } p-6 absolute top-20 right-0 mx-1  min-w-[140px] z-10 rounded-xl bg-slate-900 navbar-z-index backdrop-filter backdrop-blur-md bg-opacity-60`}>
             <ul className="list-none flex justify-end items-start flex-col gap-4">
               {navLinks.map((link) => {
                 return (
@@ -78,7 +78,7 @@ const Navbar = () => {
                       to={`${link.id}`}
                       spy={true}
                       smooth={true}
-                      offset={-50}
+                      offset={-70}
                       duration={200}
                     >
                       {link.title}

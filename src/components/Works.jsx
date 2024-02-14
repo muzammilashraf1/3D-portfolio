@@ -1,5 +1,5 @@
 import { Tilt } from 'react-tilt'
-import { motion } from 'framer-motion'; 
+import { motion } from 'framer-motion';
 import { styles } from '../styles';
 
 import { github } from '../assets';
@@ -36,7 +36,7 @@ const ProjectCard = ({
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
             <div
               onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              className='bg-blue-500 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
                 src={github}
@@ -48,7 +48,7 @@ const ProjectCard = ({
         </div>
 
         <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+          <h3 onClick={() => window.open(source_code_link, "_blank")} className='cursor-pointer text-white font-bold text-[24px] underline decoration-4 decoration-blue-400'>{name}</h3>
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
 
@@ -70,24 +70,22 @@ const ProjectCard = ({
 
 const Works = () => {
   return (
-    <section id="works" name="works">
-      <motion.div variants={textVariant}>
-        <p className={styles.sectionSubText}></p>
-      </motion.div>
+    <section id="works" name="works" className='py-20 flex flex-col justify-center items-center w-full min-h-[300px] mx-auto bg-hero-pattern pt-8 text-white'>
+      <h2 className="text-center p-3 underline min-w-[30%] text-4xl">
+        Projects
+      </h2>
 
-      <div className='w-full flex'>
-        <motion.p
-        variants={fadeIn("", "", 0.1, 1)} className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-          Here are some of my projects. You can find more on my Github.
-        </motion.p>
-      </div>
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)} className='mt-3 text-secondary text-[1.5rem] max-w-3xl leading-[30px]'>
+        Here are some of my projects. You can find more on my Gitub.
+      </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-7'>
         {projects.map((project, index) => {
           return (
-            <ProjectCard 
-            key={`project-${index}`}
-            index={index} {...project} />
+            <ProjectCard
+              key={`project-${index}`}
+              index={index} {...project} />
           );
 
         })}

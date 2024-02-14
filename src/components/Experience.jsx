@@ -2,7 +2,10 @@ import React from 'react';
 
 const Experience = () => {
 	return (
-		<section id="resume" className='bg-white w-full'>
+		<section id="resume" className='bg-white w-full py-10'>
+			<h2 className="text-center p-3 underline min-w-[30%] text-4xl text-black">
+				My Resume
+			</h2>
 			<div className="flex flex-col py-10 md:flex-row justify-evenly mx-auto items-center relative text-center md:text-left max-w-7xl px-10 bg-white text-black">
 				<h2 className="flex-initial self-center md:self-start p-10 underline decoration-4 decoration-green-500 min-w-[30%] text-xl">Skills</h2>
 				<div className="flex-1">
