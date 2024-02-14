@@ -15,10 +15,10 @@ const Computers = ({ isMobile }) => {
       <primitive
         object={computer.scene}
         scale={isMobile ? 8 : 12}
-        position={isMobile ? [0, -0.5, -1] : [0, 0, -0.5]}
+        position={isMobile ? [0, 0.3, 0] : [0, 0, 0]}
         rotation={[0.0, 1.35, 0]}
       />
-      <Html distanceFactor={isMobile ? 4 : 10} zIndexRange={[0, 1]}>
+      <Html distanceFactor={isMobile ? 5 : 10} zIndexRange={[0, 1]}>
         <div className='absolute top-[-150px] left-[-180px]'>
           <Terminal />
         </div>
