@@ -14,7 +14,7 @@ const Computers = ({ isMobile }) => {
       <directionalLight position={[0, 10, 20]} intensity={12} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 14 : 20}
+        scale={isMobile ? 13 : 20}
         position={isMobile ? [0, 0.3, 0] : [0, -1.5, 0]}
         rotation={[0.0, 1.35, 0]}
       />
