@@ -18,7 +18,7 @@ const Computers = ({ isMobile }) => {
         position={isMobile ? [0, 0.3, 0] : [0, -1.5, 0]}
         rotation={[0.0, 1.35, 0]}
       />
-      <Html distanceFactor={isMobile ? 6 : 8} zIndexRange={[0, 1]}>
+      <Html distanceFactor={isMobile ? 5 : 8} zIndexRange={[0, 1]}>
         <div className='absolute top-[-300px] lg:top-[-190px] left-[-170px]'>
           <Terminal />
         </div>
