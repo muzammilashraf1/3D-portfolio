@@ -1,15 +1,58 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { ComputersCanvas, StarsCanvas } from './canvas';
 import { Link } from 'react-scroll';
-
-import React from 'react';
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
+import { useCallback, useState, useEffect, useMemo } from 'react';
+// import ParticlesBackground from './ParticlesBackground';
+// import { tsParticles } from "https://cdn.jsdelivr.net/npm/@tsparticles/engine@3.1.0/+esm";
+// import { loadAll } from "https://cdn.jsdelivr.net/npm/@tsparticles/all@3.1.0/+esm";
+import './Hero.css';
+import { particlesConfig, particlesBubblesConfig } from './HeroParticles';
 
 import Typewriter from 'typewriter-effect';
 
 const Hero = () => {
+  const [init, setInit] = useState(false);
+
+  // this should be run only once per application lifetime
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+      // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+      // starting from v2 you can add only the features you need reducing the bundle size
+      //await loadAll(engine);
+      //await loadFull(engine);
+      await loadSlim(engine);
+      //await loadBasic(engine);
+    }).then(() => {
+      setInit(true);
+    });
+  }, []);
+
+  const particlesLoaded = (container) => {
+    console.log(container);
+
+  };
+
+  const options = useMemo(
+    () => (particlesBubblesConfig),
+    [],
+  );
+
+  
   return (
     <section id="hero" className={`relative w-full min-h-screen mx-auto bg-gradient-to-r from-cyan-700 to-blue-600`}>
+       <div className='h-[100%]'>
+          {init && <Particles
+        id="tsparticles"
+        particlesLoaded={particlesLoaded}
+        options={options}
+        className='h-full'
+      />}
+        </div>
       
       <div className={`absolute inset-0 top-[120px] mx-auto ${styles.paddingX} flex flex-col lg:flex-row items-start gap-1`}>
         <div className='flex lg:w-[1200px] gap-2 md:h-full'>
@@ -31,7 +74,8 @@ const Hero = () => {
                       strings: ['Software Developer', `Computer Science '22 @ University of Waterloo`, 'Use the terminal or scroll down to learn more :)'],
                       autoStart: true,
                       loop: true,
-                      pauseFor: 2000
+                      pauseFor: 2000,
+                      delay: 50
                     }}
                     className='inline'
                   />

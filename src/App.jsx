@@ -1,6 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
 import { Navbar, Hero, Experience, Feedbacks, Contact, Tech, Works, About } from "./components";
-import { StarsCanvas } from "./components/canvas";
 
 const App = () => {
   return (
@@ -24,3 +23,7 @@ const App = () => {
 }
 
 export default App
+
+
+
+
