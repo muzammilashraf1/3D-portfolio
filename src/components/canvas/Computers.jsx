@@ -6,20 +6,20 @@ import CanvasLoader from "../Loader";
 import Terminal from "../Terminal";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./apple_imac/scene.gltf");
+  const computer = useGLTF("./laptop/scene.gltf");
 
   return (
-    <mesh rotation={[0, -0.1, 0]}>
-      <pointLight intensity={ isMobile? 10 : 50.5} />
-      <directionalLight position={[10, 10, 5]} intensity={3} />
+    <mesh rotation={[0.07, -0.1, -0.3]}>
+      <pointLight intensity={ isMobile? 10 : 2.5} />
+      <directionalLight position={[0, 10, 20]} intensity={12} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 8 : 12}
-        position={isMobile ? [0, 0.3, 0] : [0, 0, 0]}
+        scale={isMobile ? 8 : 20}
+        position={isMobile ? [0, 0.3, 0] : [0, -1.5, 0]}
         rotation={[0.0, 1.35, 0]}
       />
-      <Html distanceFactor={isMobile ? 5 : 10} zIndexRange={[0, 1]}>
-        <div className='absolute top-[-150px] left-[-180px]'>
+      <Html distanceFactor={isMobile ? 5 : 8} zIndexRange={[0, 1]}>
+        <div className='absolute top-[-300px] lg:top-[-190px] left-[-170px]'>
           <Terminal />
         </div>
       </Html>

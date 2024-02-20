@@ -54,7 +54,7 @@ const Hero = () => {
       />}
         </div>
       
-      <div className={`absolute inset-0 top-[120px] mx-auto ${styles.paddingX} flex flex-col lg:flex-row items-start gap-1`}>
+      <div className={`absolute inset-0 top-[120px] mx-auto ${styles.paddingX} flex flex-col xl:flex-row items-start gap-1`}>
         <div className='flex lg:w-[1200px] gap-2 md:h-full'>
           <div className='flex flex-col justify-start items-center mt-5'>
             <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
