@@ -70,13 +70,16 @@ export const particlesConfig = {
 };
 
 export const particlesBubblesConfig = {
+    fullScreen: {
+        enable: false
+    },
     background: {
         color: "#333",
         opacity: 0
     },
     particles: {
         number: {
-            value: 90,
+            value: 60,
         },
         move: {
             direction: 'bottom',
@@ -88,7 +91,7 @@ export const particlesBubblesConfig = {
             value: { min: 0.1, max: 0.5 },
         },
         size: {
-            value: { min: 5, max: 18 },
+            value: { min: 2, max: 12 },
         },
         wobble: {
             distance: 20,
