@@ -8,8 +8,8 @@ const About = () => {
       <h2 className="text-center p-3 underline min-w-[30%] text-4xl">
           About Me
       </h2>
-      <div className="flex flex-col py-10 md:flex-row justify-evenly mx-auto items-center relative text-center md:text-left max-w-6xl px-10">
-        <div className='flex flex-col items-center pr-10 '>
+      <div className="flex flex-col py-10 md:flex-row justify-evenly mx-auto items-center relative md:text-left max-w-6xl px-10">
+        <div className='flex flex-col items-center md:pr-10 '>
           <img src={profile} alt="about" className="w-[16rem] h-[16rem] object-cover rounded-2xl border-4 border-purple-900" />
         </div>
        
