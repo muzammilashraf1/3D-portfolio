@@ -1,4 +1,8 @@
-# React + Vite
+# My Portfolio Website
+
+Greetings adventurer! Welcome to my website repository. You can see the live deployment at: [minhalshanjer.com](https://minhalshanjer.com) if I'm still using this template.
+
+# React + ThreeJS + Vite
 
 Welcome to my website. Checkout minhalshanjer.com
 
