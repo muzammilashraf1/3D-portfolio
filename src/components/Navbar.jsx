@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav
       className={`w-[100vw] flex items-center py-5 fixed top-0 z-50 bg-slate-900 navbar-z-index backdrop-filter backdrop-blur-md bg-opacity-60`}
     >
-      <div className="w-full flex justify-around items-center mx-auto">
+      <div className="w-full flex justify-around items-center px-5 mx-auto">
         <Link
           to="/"
           className="flex items-center gap-2"
