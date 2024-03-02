@@ -70,36 +70,36 @@ export const particlesConfig = {
 };
 
 export const particlesBubblesConfig = {
-    fullScreen: {
-        enable: false
+  fullScreen: {
+    enable: false,
+  },
+  background: {
+    color: "#333",
+    opacity: 0,
+  },
+  particles: {
+    number: {
+      value: 25,
     },
-    background: {
-        color: "#333",
-        opacity: 0
+    move: {
+      direction: "bottom",
+      enable: true,
+      random: false,
+      straight: false,
     },
-    particles: {
-        number: {
-            value: 60,
-        },
-        move: {
-            direction: 'bottom',
-            enable: true,
-            random: false,
-            straight: false,
-        },
-        opacity: {
-            value: { min: 0.1, max: 0.5 },
-        },
-        size: {
-            value: { min: 2, max: 12 },
-        },
-        wobble: {
-            distance: 20,
-            enable: true,
-            speed: {
-                min: -5,
-                max: 5,
-            },
-        },
+    opacity: {
+      value: { min: 0.1, max: 0.5 },
     },
+    size: {
+      value: { min: 6, max: 18 },
+    },
+    wobble: {
+      distance: 20,
+      enable: true,
+      speed: {
+        min: -5,
+        max: 5,
+      },
+    },
+  },
 };
