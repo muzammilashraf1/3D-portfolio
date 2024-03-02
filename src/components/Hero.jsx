@@ -64,14 +64,14 @@ const Hero = () => {
           <div className='pt-3 h-full flex flex-co'>
             <div>
               <h1 className={`${styles.sectionHeadText} text-white`}>
-                Hi, I'm <span className='text-[#915EFF]'> Minhal
+                Hi, I'm <span className='text-[#915EFF]'> Muzammil
                 </span>
               </h1>
               <div>
                 <p className={`${styles.sectionSubText} mt-2 text-white-100 inline`}>
                   {'>'} <Typewriter
                     options={{
-                      strings: ['Software Developer', `Computer Science '22 @ University of Waterloo`, 'Use the terminal or scroll down to learn more :)'],
+                      strings: ['Student & Software Developer', `Computer Science @ University of Toronto`, 'Use the terminal or scroll down to learn more!'],
                       autoStart: true,
                       loop: true,
                       pauseFor: 2000,

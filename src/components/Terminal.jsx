@@ -78,13 +78,13 @@ const Terminal = () => {
             <div className="traffic-light yellow"></div>
             <div className="traffic-light green"></div>
           </div>
-          user@minhalswebsite - zsh
+          user@muzammilswebsite - zsh
         </div>
 
         {showIntro && (
           <div className="output">
             <div>
-              I'm Minhal, Welcome to my website! You can find out more about me by using this terminal or scrolling down! Type help to begin to learn about me.
+              I'm Muzammil, Welcome to my website! You can find out more about me by using this terminal or scrolling down! Type help to begin to learn about me.
             </div>
           </div>
         )}
@@ -97,7 +97,7 @@ const Terminal = () => {
           />
         ))}
         <div className="input">
-          <span>user@minhalswebsite ~ %</span>
+          <span>user@muzammilswebsite ~ %</span>
           <input
             type="text"
             value={input}

@@ -75,17 +75,17 @@ import {
     {
       name: 'GMail',
       icon: gmail,
-      link: 'mailto:mshanjer@gmail.com'
+      link: 'mailto:mshanjer3@gmail.com'
     },
     {
       name: 'GitHub',
       icon: github,
-      link: 'https://www.github.com/minhalexus'
+      link: 'https://www.github.com/muzammilashraf1'
     },
     {
       name: 'LinkedIn',
       icon: linkedin,
-      link: 'https://www.linkedin.com/in/mshanjer'
+      link: 'https://www.linkedin.com'
     }
   ];
   
@@ -233,7 +233,7 @@ import {
         },
       ],
       image: sustainblr,
-      source_code_link: "https://github.com/minhalexus/go-green",
+      source_code_link: "https://github.com/",
     },
   ];
   

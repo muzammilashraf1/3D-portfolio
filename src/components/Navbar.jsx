@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-[100vw] flex items-center py-5 fixed top-0 z-50 bg-slate-900 navbar-z-index backdrop-filter backdrop-blur-md bg-opacity-60`}
+      className={`w-[100vw] flex items-center py-5 fixed top-0 z-50 bg-slate-1000 navbar-z-index backdrop-filter backdrop-blur-none bg-opacity-20`}
     >
       <div className="w-full flex justify-around items-center px-5 mx-auto">
         <Link
@@ -26,7 +26,7 @@ const Navbar = () => {
         >
           <img src={logo}  alt="logo" className="w-9 h-9 object-contain cursor-pointer mr-[-5px]"/>
           <p className="text-white text-[18px] font-bold cursor-pointer">
-            inhal
+            uzammil
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">

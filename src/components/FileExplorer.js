@@ -3,7 +3,7 @@ import { useState } from 'react';
 const FileExplorer = () => {
   const [currentDirectory, setCurrentDirectory] = useState('/home/user');
   const [fileContents] = useState({
-    '/home/user/aboutme.txt': 'Hello! My name is Minhal Shanjer. I graduated with a degree in computer science from the University of Waterloo in 2022. Throughout my co-op and fulltime career, I did a lot of work with React.js, React Native, and Node.js. I am currently working at Axonify Inc as a Software Developer. I am passionate about software development and am always looking for new and exciting projects to work on!',
+    '/home/user/aboutme.txt': 'Hello! My name is Muzammil Shanjer. I am a third year computer science major at the University of Toronto. I am currently working on projects to build up proficiency in core frontend development technologies such as React. I am strongly interested in frontend development and looking out for internships beginning Summer 2024.',
     '/home/user/contactme': {},
     '/home/user/contactme/email.txt': 'mshanjer@gmail.com',
     '/home/user/contactme/phone.txt': '226 507 5936',

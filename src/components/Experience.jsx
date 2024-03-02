@@ -9,8 +9,10 @@ const Experience = () => {
 			<div className="flex flex-col py-10 md:flex-row justify-evenly mx-auto items-center relative text-center md:text-left max-w-7xl px-10 bg-white text-black">
 				<h2 className="flex-initial self-center md:self-start p-10 underline decoration-4 decoration-green-500 min-w-[30%] text-xl">Skills</h2>
 				<div className="flex-1">
-					<div>JavaScript, React, Python, C++, Java</div>
-					<div>Tools: Git, Jenkin, Docker, AWS, PostgreSQL, Unix, Bash</div>
+					<div>Programming Languages: C, Java, Python, JavaScript </div>
+					<div>	Libraries / Frameworks: React, Tailwind CSS, Bootstrap, Scikit Learn, NumPy</div>
+					<div>	Other: Git, Unix Tools, Bash, HTML, CSS
+					</div>
 				</div>
 			</div>
 
@@ -20,40 +22,34 @@ const Experience = () => {
 				<h2 className="flex-initial self-center md:self-start px-10 underline decoration-4 decoration-blue-500 min-w-[30%] text-xl pt-5">Experience</h2>
 				<div className="experience flex-1">
 					<div className='pt-5'>
-						<h3 className="text-3xl font-semibold	">Axonify Inc</h3>
-						<div className="">Software Developer JAN 2022 - Present</div>
+						<h3 className="text-3xl font-semibold	">Nautics Technology</h3>
+						<div className="">May 2022 - August 2022</div>
 						<br />
 						<ul className='marker:text-green list-outside list-disc ml-6 text-left space-y-2'>
 							<li>
-								Developed new features with Backbone, ReactJS and Typescript, with a special focus on accessibility throughout the development process
-							</li>
-							<li>
-								Redesigned a game saving feature to save games based on a session instance of a training module, instead of saving one file per module							</li>
-							<li>
-								Integrated and implemented third party libraries such as Highcharts and Duet Date-Picker, while ensuring wide range browser
-								compatibility							
+								Assisted in managing safety databases, ensuring accuracy and completeness of data entry
 							</li>
 						</ul>
 					</div>
 
 					<div className='pt-5'>
-						<h3 className="text-3xl font-semibold	">PlayStation - SIE</h3>
-						<div className="">Software Developer (Co-op) SEP 2021 - DEC 2021</div>
+						<h3 className="text-3xl font-semibold	">Block On Block</h3>
+						<div className="">May 2023 - August 2023</div>
 						<br />
 						<ul className='marker:text-green list-outside list-disc ml-6 text-left space-y-2'>
 							<li>
-								Collaborated with Designers and Product Owners to develop the checkout experience on PlayStation 5 using React Native and Redux
+								Assisted in ordering and receiving parts and supplies
 							</li>
 							<li>
-								Developed parameterized integration tests for relevant APIs using Jest and TypeScript to identify API issues for client-side developers
+								Prepared invoice and recorded payment using computer systems.
 							</li>
 							<li>
-								Setup a Jenkins multi-pipeline job to run ESLint and unit tests, for a newly developed code library, on every Git commit
+								Printed completed bank reconciliation
 							</li>
 						</ul>
 					</div>
 
-					<div className='pt-5'>
+					{/* <div className='pt-5'>
 						<h3 className="text-3xl font-semibold	">Axonify</h3>
 						<div className="">JavaScript Developer (Co-op) JAN 2021 - APR 2021</div>
 						<br />
@@ -69,9 +65,9 @@ const Experience = () => {
 								Integrated new API endpoints with Backbone.js and Marionette.js to upload SCORM modules asynchronously to improve performance
 							</li>
 						</ul>
-					</div>
+					</div> */}
 
-					<div className='pt-5'>
+					{/* <div className='pt-5'>
 						<h3 className="text-3xl font-semibold	">Dematic</h3>
 						<div className="">Software Developer (Co-op) SEP 2019 - DEC 2019</div>
 						<br />
@@ -105,7 +101,7 @@ const Experience = () => {
 								Implemented user authentication with OAuth 2.0 authorization using Microsoft Graph API, and routed uploads to Microsoft Azure
 							</li>
 						</ul>
-					</div>
+					</div> */}
 				</div>
 			</div>
 
@@ -115,24 +111,22 @@ const Experience = () => {
 				<h2 className="flex-initial self-center md:self-start px-10 underline decoration-4 decoration-red-500 min-w-[30%] text-xl pt-5">Education</h2>
 				<div className="experience flex-1">
 					<div className='pt-5'>
-						<h3 className="text-3xl font-semibold	">University of Waterloo</h3>
-						<div className="">Bachelor of Computer Science - SEP 2017 - APR 2022</div>
+						<h3 className="text-3xl font-semibold	">University of Toronto</h3>
+						<div className="">Honour's Bachelor of Science - SEP 2021 - Present</div>
 						<br />
-						<div>
-							Integrated features from an acquired company (Nudge) into the Axonify's core platform.
+						<div className=''>
+							<p>
+							Third Year Computer Science & Mathematics major at the University of Toronto.
+							</p>
+						</div>
+						<div className='py-2'>
+							<p>
+							Relevant Coursework: Data Structures & Algorithms, Software Design, Systems Programming, 
+								Machine Learning, Computer Organization, Theory of Computation, Linear Algebra,
+								Multivariable Calculus, Discrete Mathematics
+							</p>
 						</div>
 					</div>
-
-					<div className='pt-5'>
-						<h3 className="text-3xl font-semibold	">Bluevale Collegiate Institute</h3>
-						<div className="">Ontario Scholar SEP 2014 - JUN 2017</div>
-						<br />
-						<div className='text-left space-y-2'>
-							Top 25% in Canadian Computing Competition, and Euclid Math Competition.
-							Peer Tutor for Grade 9 and 10 Math/Science. Did X-Country, Karate and Tennis.
-						</div>
-					</div>
-
 				</div>
 			</div>
 		</section>

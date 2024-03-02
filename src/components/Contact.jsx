@@ -31,7 +31,7 @@ const Contact = () => {
           </div>
         </div>
         <p className='text-center'>
-          Minhal Shanjer &copy; 2024
+          Muzammil Ashraf &copy; 2024
         </p>
       </div>
     </section>
