@@ -1,10 +1,10 @@
 # My Portfolio Website
 
-Greetings adventurer! Welcome to my website repository. You can see the live deployment at: [minhalshanjer.com](https://minhalshanjer.com) if I'm still using this template.
+Welcome to my portfolio website repository. The live deployment is located at: [muzammilashraf.com](https://muzammilashraf.com)
 
 # React + ThreeJS + Vite
 
-Welcome to my website. Checkout minhalshanjer.com
+Welcome to my website. Checkout muzammilashraf.com
 
 Remember to check vite.config.js when executing locally. 
 The 'base' should be commented out in the local environment.
