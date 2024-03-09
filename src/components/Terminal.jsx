@@ -48,7 +48,7 @@ const Terminal = () => {
       const commandOutput = executeCommand(command);
       setOutput([
         ...output,
-        { type: 'output', value: `user@muzamilswebsite ~ % ${command}` },
+        { type: 'output', value: `user@muzammilswebsite ~ % ${command}` },
         { type: 'output', value: commandOutput },
       ]);
       setInput('');
